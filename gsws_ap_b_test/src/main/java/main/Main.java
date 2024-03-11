@@ -6,7 +6,7 @@ import main.test.Customer;
 import main.test.Branch;
 
 public class Main {
-
+	
 	public static void main(String[] Args) {
 		var context = 
 				new AnnotationConfigApplicationContext(ProjectConfig.class);
@@ -17,6 +17,7 @@ public class Main {
 		
 		Branch branch = context.getBean(Branch.class);
 		
+		System.out.println("");
 		System.out.println("Employee's Name: " + employee.getName());
 		System.out.println("Employee's Age: " + employee.getAge());
 		
